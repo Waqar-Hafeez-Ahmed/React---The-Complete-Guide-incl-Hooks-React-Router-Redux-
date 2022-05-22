@@ -1,6 +1,6 @@
-
+import React from "react";
 import Expenses from "./components/Expenses/Expenses";
-
+import NewExpenses from "./components/NewExpenses/NewExpenses";
 
 
 function App() {
@@ -26,10 +26,12 @@ function App() {
     },
   ];
 
-
+const changeHandler = (data)=>{
+  console.log(data)
+};
   return (
     <div>
-      <h2>Lets get started</h2>
+      <NewExpenses onAppChange = {changeHandler}/>
       <Expenses item = {expenses}></Expenses>
     </div>
   );
