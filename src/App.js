@@ -1,5 +1,5 @@
 
-import Expenses from "./Expenses";
+import Expenses from "./components/Expenses/Expenses";
 
 
 
